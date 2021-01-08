@@ -10,8 +10,8 @@ const {
 
 server.on('connection', socket => {
     socket.on('message', message => {
-        let deserlizedCounter = Deserializer(message);
-        deserlizedCounter.increment();
-        socket.send(deserlizedCounter.count);
+        let deserializedCounter = Deserializer(message);
+        deserializedCounter.increment();
+        socket.send(deserializedCounter.count);
     });
 });
