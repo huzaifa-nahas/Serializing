@@ -2,7 +2,7 @@ function serializerReplacer(key, value) {
     return typeof value === "function" ? value.toString() : value;
 }
 
-function Serializer(obj) {
+export function Serializer(obj) {
     return JSON.stringify(obj, serializerReplacer);
 }
 
@@ -42,11 +42,6 @@ function makeFunction(value) {
     return fun;
 }
 
-function Deserializer(serializedObj) {
+export function Deserializer(serializedObj) {
     return JSON.parse(serializedObj, deserialiserReplacer)
 }
-
-module.exports = {
-    Serializer,
-    Deserializer
-};

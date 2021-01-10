@@ -1,0 +1,27 @@
+{
+  "name": "serializing",
+  "version": "1.0.0",
+  "description": "This code enable serialing objects that include methods",
+  "main": "Serializing.js",
+  "scripts": {
+    "receiver": "nodemon --exec babel-node receiver.js",
+    "sender": "nodemon --exec babel-node sender.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huzaifa-nahas/Serializing.git"
+  },
+  "author": "Huzaifa Al Nahas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huzaifa-nahas/Serializing/issues"
+  },
+  "homepage": "https://github.com/huzaifa-nahas/Serializing#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "nodemon": "^2.0.7"
+  }
+}

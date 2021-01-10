@@ -1,8 +1,8 @@
-const WebSocket = require('ws');
-const {
+import {
     Serializer
-} = require('./Serializing');
+} from './Serializing';
 
+const WebSocket = require('ws');
 const socket = new WebSocket('ws://localhost:8081');
 
 let counter = {
