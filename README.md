@@ -1,8 +1,8 @@
 # Serializing  
   
-This code allows serlializing an object that has primitive values and methods.  
+This code allows serializing an object that has primitive values and methods.  
   
-It includes a sender and receiver to validate serializing an object.  
+It includes sender and receiver scripts to validate serializing an object.  
   
 To run it, first run:  
 npm install  
